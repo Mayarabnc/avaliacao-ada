@@ -1,0 +1,51 @@
+1.
+
+function primo(){
+    
+let n = parseInt(prompt('Digite um número inteiro positivo: '));
+
+  if (n < 0) {
+    console.log('Não é possível verificar se este número é primo.');
+    return;
+  }
+
+  let primo = true;
+
+  if (n === 0 || n === 1) {
+    primo = false;
+  } else {
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+      if (n % i === 0) {
+        primo = false;
+        break;
+      }
+    }
+  }
+
+  if (primo) {
+    console.log(`${n} é um número primo.`);
+  } else {
+    console.log(`${n} não é um número primo.`);
+  }
+}
+
+-----------------------------------------------------------------------
+
+2.a.
+
+
+-----------------------------------------------------------------------
+
+3. c.
+
+-----------------------------------------------------------------------
+
+4. e.
+
+-----------------------------------------------------------------------
+
+5. e.
+
+-----------------------------------------------------------------------
+
+6. a.
